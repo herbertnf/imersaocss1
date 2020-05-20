@@ -1,42 +1,95 @@
 
+
+/* soft reset do css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    background-image:
-      url('https://img.freepik.com/free-vector/futuristic-technology-background-with-honeycombs_23-2148481277.jpg');
-    background-size: auto 100vh;
-    font-family: Arial;
-    height: 100vh
+  background-color: cian
+  background-size: auto 100vh; 
+  font-family: Arial;
+  height: 100vh;
+  font-size: 12px;
+}
+
+/* se a tela tiver pelo menos 400px vai carregar estes estilos */
+@media (min-width: 400px) {
+  body {
+    font-size: 14px;
   }
-  
-  .menu {
-    background-color:white;
-   
+}
+
+/* breakpoint */
+@media (min-width: 600px) {
+  body {
+    font-size: 18px;
   }
-  
-  .menu ul {
-    display: flex;
-    justify-content: space-around;
+}
+
+/* breakpoint */
+@media (min-width: 1200px) {
+  body {
+    font-size: 20px;
+    
   }
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  background-color: white;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu li {
+ list-style: none; 
+}
+
+.menu a {
   
-  .menu li {
-    list-style: none;
-  }
-  
-  a {
-    color: teal;
-    text-decoration: none;
-  }
-  
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  .site-subtitle,
-  .site-title {
-    text-align: center;
-    color: whitesmoke;
-  }
-  
-  .site-subtitle {
-    font-style: italic;
-  }
+  display: block;
+  padding: 10px 20px;
+}
+
+a {
+  color: teal;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.site-subtitle, 
+.site-title {
+  color: whitesmoke;
+  text-align: center;
+}
+
+.site-title {
+  font-size: 4em;
+}
+
+.site-subtitle {
+ font-style: italic;
+}
+
+.img-portfolio {
+  height: 180px;
+  width: 180px;
+}
